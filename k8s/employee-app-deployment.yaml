@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-app
+spec:
+  replicas: 3  # Adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: employee-app
+  template:
+    metadata:
+      labels:
+        app: employee-app
+    spec:
+      containers:
+        - name: employee-app
+          image: marripavankumar/employee-app  # Replace with your Docker image
+          ports:
+            - containerPort: 8080  # Adjust port number if necessary
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql-service:3306/your_database  # Replace with your MySQL connection URL
+            - name: SPRING_DATASOURCE_USERNAME
+              value: root  # Replace with your MySQL username
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: password  # Replace with your MySQL password
