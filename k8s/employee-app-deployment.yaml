@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: employee-app
-          image: marripavankumar/employee-app  # Replace with your Docker image
+          image: marripavankumar/employee-app:1.0.0  # Replace with your Docker image
           ports:
             - containerPort: 8080  # Adjust port number if necessary
           env:
