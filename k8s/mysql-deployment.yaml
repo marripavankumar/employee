@@ -16,13 +16,13 @@ spec:
         - name: mysql
           image: mysql:8.0
           env:
-            - name: root
-              value: password  # Replace with your MySQL root password
-            - name: root
-              value: password  # Replace with your MySQL database name
-            - name: root
-              value: password  # Replace with your MySQL username
-            - name: root
+            - name: MYSQL_ROOT_PASSWORD
+              value: password
+            - name: MYSQL_DATABASE
+              value: employees  # Replace with your MySQL database name
+            - name: MYSQL_USER
+              value: root  # Replace with your MySQL username
+            - name: MYSQL_PASSWORD
               value: password  # Replace with your MySQL password
           ports:
             - containerPort: 3306
