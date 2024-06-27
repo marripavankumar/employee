@@ -20,10 +20,10 @@ spec:
               value: password
             - name: MYSQL_DATABASE
               value: employees  # Replace with your MySQL database name
-            - name: MYSQL_USER
-              value: root  # Replace with your MySQL username
-            - name: MYSQL_PASSWORD
-              value: password  # Replace with your MySQL password
+#            - name: MYSQL_USER
+#              value: root  # Replace with your MySQL username
+#            - name: MYSQL_PASSWORD
+#              value: password  # Replace with your MySQL password
           ports:
             - containerPort: 3306
           volumeMounts:
