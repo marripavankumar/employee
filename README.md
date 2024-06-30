@@ -16,6 +16,10 @@ Azure
 -deployed docker hub employee application image
 
 
+
+
+** commands for reference**
+
 **Azure CLI login commands**
 - `az --version`
 - `az login`
