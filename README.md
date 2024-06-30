@@ -17,8 +17,7 @@ Azure
 
 
 
-
-** commands for reference**
+**commands for reference**
 
 **Azure CLI login commands**
 - `az --version`
