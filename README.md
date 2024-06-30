@@ -1,3 +1,21 @@
+**Application:**
+1) Endpoints created using spring-webflux (employee)
+2) Created the docker image of employee and pushed to docker hub
+3) created deployment, service , configmap, pvc  yaml files for sevice and database
+	configmap.yml
+	employee-app-deployment.yaml
+	employee-app-service.yaml
+	mysql-deployment.yaml
+	mysql-pvc.yaml
+	mysql-service.yaml
+4) pulled the docker image as part of AKS deployment.
+
+Azure
+- created Resource group
+- created AKS cluster
+-deployed docker hub employee application image
+
+
 **Azure CLI login commands**
 - `az --version`
 - `az login`
