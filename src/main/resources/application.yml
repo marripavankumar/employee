@@ -1,11 +1,11 @@
 spring:
   r2dbc:
-    url: r2dbc:mysql://localhost:3306/emp
+    url: r2dbc:mysql://mysql-service:3306/emp
     username: root
     password: password
 
   datasource:
-    url: jdbc:mysql://localhost:3306/emp
+    url: jdbc:mysql://mysql-service:3306/emp
     username: root
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
